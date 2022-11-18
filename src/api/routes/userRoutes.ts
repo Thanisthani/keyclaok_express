@@ -16,7 +16,7 @@ console.log("keycloak initaied")
 
 userRouter.post('/register', registerUser);
 userRouter.post('/login', loginUser);
-userRouter.get('/get', keycloak.protect('user'), getUser);
+userRouter.get('/get', keycloak.protect(), getUser);
 
 
 export default userRouter;
